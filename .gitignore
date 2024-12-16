@@ -1,0 +1,52 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Build files
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+*.iml
+
+# Coverage directory
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# Debugging files
+*.pid
+*.seed
+*.pid.lock
+
+# OS-specific files
+*.bak
+*.orig
+*.rej
+*.sublime-project
+*.sublime-workspace
