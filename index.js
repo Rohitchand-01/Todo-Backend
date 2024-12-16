@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -8,7 +7,11 @@ const app = express();
 const PORT = 3000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://todo-frontend-vert-eight.vercel.app', // Allow requests from this URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
+  credentials: true, // If you need to include cookies or authentication headers
+}));
 app.use(express.json()); // To parse JSON request bodies
 
 // Connect to MongoDB
